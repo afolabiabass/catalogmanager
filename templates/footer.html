@@ -1,0 +1,37 @@
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md">
+                        <img class="mb-2" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                        <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Sitemap</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="{{ url_for('index_catalog') }}">Catalog</a></li>
+                            <li><a class="text-muted" href="{{ url_for('index_items') }}">Items</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="https://www.tutorialspoint.com/python">Learn Python</a></li>
+                            <li><a class="text-muted" href="http://flask.pocoo.org/docs/1.0/tutorial/">Flask Tutorial</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled text-small">
+                            <li><a class="text-muted" href="http://udacity.com">Udacity</a></li>
+                            <li><a class="text-muted" href="http://udacity.com">Full Stack Degree Course</a></li>
+                            <li><a class="text-muted" href="http://afolabiabass.com">Afolabi Abass</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    </body>
+</html>

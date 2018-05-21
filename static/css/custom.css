@@ -1,0 +1,60 @@
+.login-page a {
+    color: #FFFFFF;
+}
+
+.login-page a:hover {
+    color: #FFFFFF;
+}
+
+.logo-container {
+    width: 350px;
+    margin: 65px auto 30px;
+}
+
+.login-container {
+    background-color: #FFFFFF;
+    padding: 35px;
+    width: 350px;
+    margin: 25vh auto 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.12);
+}
+
+.login-page .logo {
+    height: 35px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.login-subheading {
+    font-weight: 400;
+    color: #FFFFFF;
+    font-family: 'Rubik',
+    sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.google-login {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 20px 0 rgba(0, 123, 255, 0.14);
+    margin-bottom: 30px;
+}
+
+.google-login span {
+    color: #3A4447;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.option-separator {
+    font-size: 12px;
+    text-align: center;
+    color: #7E8889;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}

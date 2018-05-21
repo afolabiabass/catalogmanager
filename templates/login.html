@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <title>Catalog - Login</title>
+
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+</head>
+
+<body class="login-page">
+    <!-- main Content -->
+    <div class="login-container">
+        <div class="google-login">
+            <a href="{{ url_for('google_login') }}">
+                <img src="{{ url_for('static', filename='img/google-g.svg') }}" alt="google logo" height="30" width="20">
+                <span>Login with Google</span>
+            </a>
+        </div>
+        {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+
+        <form class="form-signin" method="post">
+            <input type="hidden" value="{{ request.args.get('next', '') }}"/>
+            <div class="form-group form-group-default">
+                <label for="email">Email Address</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="" required autofocus>
+            </div>
+
+            <div class="form-group form-group-default">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="" required autofocus>
+            </div>
+
+            <button class="btn btn-lg btn-primary btn-block login-btn" type="submit">Login</button>
+        </form>
+    </div>
+
+    <p class="forgot-text"><a href="#">Can't login?</a></p>
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>
